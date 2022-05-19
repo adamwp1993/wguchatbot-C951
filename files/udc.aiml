@@ -270,9 +270,19 @@
               <text>CyberSecurity Researcher</text>
               <postback>SECURITY RESEARCHER</postback>
           </button>
+          <button>
+              <text>Web Developer</text>
+              <postback>WEB DEVELOPER</postback>
+          </button>
       </template>
   </category>
   
+  <category>
+      <pattern>BYE</pattern>
+      <template>
+          Bye!
+      </template>
+  </category>
   <category>
       <pattern>NO REVIEW</pattern>
       <template>Thanks for visiting and best of luck in your job 
