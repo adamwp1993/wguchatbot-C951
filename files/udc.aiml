@@ -16,9 +16,11 @@
          </random>
         
         Welcome to the Computer Science job chatbot. I can help you 
-        determine the type of role that might best interest you after graduation. 
+        determine the type of role that might best interest you after 
+        graduation. 
         
-        would you like to take a short survey to help you see which careers might
+        would you like to take a short survey to help you see which careers 
+        might
         interest you?
         <button>
             <text>Yes</text>
@@ -41,7 +43,7 @@
       </button>
       <button>
           <text>JAVA</text>
-          <postback>JAVA</postback>
+          <postback>BACKEND DEVELOPER</postback>
       </button>
       <button>
           <text>PYTHON</text>
@@ -49,11 +51,11 @@
       </button>
       <button>
           <text>JAVASCRIPT</text>
-          <postback>JAVASCRIPT</postback>
+          <postback>WEB DEVELOPER</postback>
       </button>
       <button>
           <text>C++</text>
-          <postback>C++</postback>
+          <postback>BACKEND DEVELOPER</postback>
       </button>
       </template>
   </category>
@@ -74,6 +76,108 @@
   </category>
   
   <category>
+      <pattern>PYTHON</pattern>
+      <template>Do you enjoy building applications or tinkering with existing 
+      applications more?
+      <button>
+          <text>Build</text>
+          <postback>BACKEND DEVELOPER</postback>
+      </button>
+      <button>
+          <text>Tinker</text>
+          <postback>SECURITY RESEARCHER</postback>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>WEB DEVELOPER</pattern>
+      <template>
+          It sounds like being a web developer might be a good fit for you! 
+          Web developers design and create the front end of websites, the 
+          interface users interact with your website. Web developers are 
+          typically strong in JavaScript, HTML and CSS, and possibly other 
+          javaScript frameworks such as React or node.
+          
+          <link>
+              <text>Click here to learn more about being a web developer!</text>
+              <url>https://www.coursera.org/articles/web-developer</url>
+          </link>
+          <button>
+              <text>See other jobs</text>
+              <postback>YES REVIEW</postback>
+          </button>
+          <button>
+              <text>Re-take survey</text>
+              <postback>START SURVEY</postback>
+          </button>
+          <button>
+              <text>Quit</text>
+              <postback>NO REVIEW</postback>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>SECURITY RESEARCHER</pattern>
+      <template>
+          It sounds like a CyberSecurity Research might be a good fit for you! 
+          CyberSecurity researchers typically investigate existing software for 
+          vulnerabilities that can be exploited. they spend most of thier time 
+          trying to break things!
+          
+          <link>
+              <text>Click here to learn more about being a CyberSecurity 
+              researcher!</text>
+              <url>https://www.bugcrowd.com/glossary/security-researcher/#:~:
+              text=Security%20researchers%20are%20skilled%20computer,trends%20in
+              %20the%20cybersecurity%20world.</url>
+          </link>
+          <button>
+              <text>See other jobs</text>
+              <postback>YES REVIEW</postback>
+          </button>
+          <button>
+              <text>Re-take survey</text>
+              <postback>START SURVEY</postback>
+          </button>
+          <button>
+              <text>Quit</text>
+              <postback>NO REVIEW</postback>
+          </button>
+      </template>
+  </category>
+  
+  
+  <category>
+      <pattern>BACKEND DEVELOPER</pattern>
+      <template>You might be interested in a backend developer role! 
+      Backend developers are typically strong in an object-oriented Server-side 
+      programming language and some SQL. They create the functionality of 
+      applications and websites where data is processed, for example API's and 
+      cloud services. 
+      <link>
+          <text>Click here to learn more about being a backend developer!</text>
+          <url>https://www.simplilearn.com/tutorials/programming-tutorial/what
+          -is-backend-development#:~:text=Backend%20developers%20build%20code%
+          20that,what%20you%20don't%20see.</url>
+      </link>
+      <button>
+              <text>See other jobs</text>
+              <postback>YES REVIEW</postback>
+          </button>
+          <button>
+              <text>Re-take survey</text>
+              <postback>START SURVEY</postback>
+          </button>
+          <button>
+              <text>Quit</text>
+              <postback>NO REVIEW</postback>
+          </button>
+      </template>
+  </category>
+  
+  <category>
       <pattern>ETL DEVELOPER</pattern>
       <template>
           It sounds like an ETL developer might be a good fit for you! 
@@ -84,8 +188,21 @@
           
           <link>
               <text>Learn about being an ETL developer!</text>
-              <url>https://hevodata.com/learn/roles-and-responsibilities-of-etl-engineer/</url>
+              <url>https://hevodata.com/learn/roles-and-responsibilities-of-etl
+              -engineer/</url>
           </link>
+          <button>
+              <text>See other jobs</text>
+              <postback>YES REVIEW</postback>
+          </button>
+          <button>
+              <text>Re-take survey</text>
+              <postback>START SURVEY</postback>
+          </button>
+          <button>
+              <text>Quit</text>
+              <postback>NO REVIEW</postback>
+          </button>
       </template>
   </category>
   
@@ -95,11 +212,26 @@
       position!
       
       BI developers create reports based on data to gain business insights from 
-      data. BI developers are typically strong in SQL and tools such as PowerBI or Tableau.
+      data. BI developers are typically strong in SQL and tools such as PowerBI 
+      or Tableau.
       <link>
           <text>Click here to learn more about being a BI developer!</text>
-          <url>https://www.indeed.com/career-advice/finding-a-job/business-intelligence-developer</url>
+          <url>https://www.indeed.com/career-advice/finding-a-job/business-
+          intelligence-developer</url>
       </link>
+      
+      <button>
+              <text>See other jobs</text>
+              <postback>YES REVIEW</postback>
+          </button>
+          <button>
+              <text>Re-take survey</text>
+              <postback>START SURVEY</postback>
+          </button>
+          <button>
+              <text>Quit</text>
+              <postback>NO REVIEW</postback>
+          </button>
       </template>
   </category>
 
@@ -121,12 +253,29 @@
   
   <category>
       <pattern>YES REVIEW</pattern>
-      <template></template>
+      <template>
+          <button>
+              <text>ETL developer</text>
+              <postback>ETL DEVELOPER</postback>
+          </button>
+          <button>
+              <text>BI developer</text>
+              <postback>BI DEVELOPER</postback>
+          </button>
+          <button>
+              <text>Backend Software Engineer</text>
+              <postback>BACKEND DEVELOPER</postback>
+          </button>
+          <button>
+              <text>CyberSecurity Researcher</text>
+              <postback>SECURITY RESEARCHER</postback>
+          </button>
+      </template>
   </category>
   
   <category>
       <pattern>NO REVIEW</pattern>
-      <template>Understood. thanks for visiting and best of luck in your job 
+      <template>Thanks for visiting and best of luck in your job 
       search!</template>
   </category>
   
