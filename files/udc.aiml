@@ -22,7 +22,7 @@
         interest you?
         <button>
             <text>Yes</text>
-            <postback>YES</postback>
+            <postback>START SURVEY</postback>
         </button>
         <button>
             <text>No</text>
@@ -68,20 +68,46 @@
       </button>
       <button>
           <text>Analyze information</text>
-          <postback>DATA ANALYST</postback>
+          <postback>BI DEVELOPER</postback>
       </button>
       </template>
   </category>
   
   <category>
-      <pattern>YES</pattern>
-      <template>START SURVEY</template>
+      <pattern>ETL DEVELOPER</pattern>
+      <template>
+          It sounds like an ETL developer might be a good fit for you! 
+          ETL developers build pipelines for Data to sanitize raw business data
+          into new databasees and views that can be used to gain insights on. 
+          ETL developers typically have strong SQL skills as well as exposure 
+          to scripting languages. 
+          
+          <link>
+              <text>Learn about being an ETL developer!</text>
+              <url>https://hevodata.com/learn/roles-and-responsibilities-of-etl-engineer/</url>
+          </link>
+      </template>
   </category>
+  
+  <category>
+      <pattern>BI DEVELOPER</pattern>
+      <template>You might be interested in a Business Intelligence Developer 
+      position!
+      
+      BI developers create reports based on data to gain business insights from 
+      data. BI developers are typically strong in SQL and tools such as PowerBI or Tableau.
+      <link>
+          <text>Click here to learn more about being a BI developer!</text>
+          <url>https://www.indeed.com/career-advice/finding-a-job/business-intelligence-developer</url>
+      </link>
+      </template>
+  </category>
+
   
   <category>
       <pattern>NO</pattern>
       <template>Would you like to review the list of jobs your Computer Science 
-      degree may qualify you for?</template>
+      degree may qualify you for?
       <button>
           <text>Yes</text>
           <postback>YES REVIEW</postback>
@@ -90,6 +116,7 @@
           <text>No</text>
           <postback>NO REVIEW</postback>
       </button>
+      </template>
   </category>
   
   <category>
