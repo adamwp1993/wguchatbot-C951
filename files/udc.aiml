@@ -1,16 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
   <category>
-    <pattern>HI</pattern>
+    <pattern>*</pattern>
     <template>
-        Hello! Welcome to the Computer Science job chatbot. I can help you 
+         <random>
+             <li>Greetings!</li>
+             <li>Salutations!</li>
+             <li>Hello!</li>
+             <li>Hola!</li>
+             <li>Namaste!</li>
+             <li>Bonjour!</li>
+             <li>Ni Hao!</li>
+             <li>Konichiwa!</li>
+             <li>Hallo!</li>
+         </random>
+        
+        Welcome to the Computer Science job chatbot. I can help you 
         determine the type of role that might best interest you after graduation. 
-        What is your name?
+        
+        would you like to take a short survey to help you see which careers might
+        interest you?
+        <button>
+            <text>Yes</text>
+            <postback>YES</postback>
+        </button>
+        <button>
+            <text>No</text>
+            <postback>NO</postback>
+        </button>
     </template>
   </category>
   
   <category>
-      <pattern>*</pattern>
-      <template>Nice to meet you, <star />! lets get started.</template>
+      <pattern>START SURVEY</pattern>
+      <template>
+      Which programming language do you prefer?
+      <button>
+          <text>SQL</text>
+          <postback>SQL</postback>
+      </button>
+      <button>
+          <text>JAVA</text>
+          <postback>JAVA</postback>
+      </button>
+      <button>
+          <text>PYTHON</text>
+          <postback>PYTHON</postback>
+      </button>
+      <button>
+          <text>JAVASCRIPT</text>
+          <postback>JAVASCRIPT</postback>
+      </button>
+      <button>
+          <text>C++</text>
+          <postback>C++</postback>
+      </button>
+      </template>
   </category>
+  
+  <category>
+      <pattern>SQL</pattern>
+      <template>Do you prefer to build solutions or analyzing information?
+      
+      <button>
+          <text>Build my own solutions</text>
+          <postback>ETL DEVELOPER</postback>
+      </button>
+      <button>
+          <text>Analyze information</text>
+          <postback>DATA ANALYST</postback>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>YES</pattern>
+      <template>START SURVEY</template>
+  </category>
+  
+  <category>
+      <pattern>NO</pattern>
+      <template>Would you like to review the list of jobs your Computer Science 
+      degree may qualify you for?</template>
+      <button>
+          <text>Yes</text>
+          <postback>YES REVIEW</postback>
+      </button>
+      <button>
+          <text>No</text>
+          <postback>NO REVIEW</postback>
+      </button>
+  </category>
+  
+  <category>
+      <pattern>YES REVIEW</pattern>
+      <template></template>
+  </category>
+  
+  <category>
+      <pattern>NO REVIEW</pattern>
+      <template>Understood. thanks for visiting and best of luck in your job 
+      search!</template>
+  </category>
+  
+
 </aiml>
