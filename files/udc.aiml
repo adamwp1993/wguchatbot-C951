@@ -121,7 +121,7 @@
   <category>
       <pattern>SECURITY RESEARCHER</pattern>
       <template>
-          It sounds like a CyberSecurity Research might be a good fit for you! 
+          It sounds like a CyberSecurity Researcher might be a good fit for you! 
           CyberSecurity researchers typically investigate existing software for 
           vulnerabilities that can be exploited. they spend most of thier time 
           trying to break things!
@@ -158,9 +158,7 @@
       cloud services. 
       <link>
           <text>Click here to learn more about being a backend developer!</text>
-          <url>https://www.simplilearn.com/tutorials/programming-tutorial/what
-          -is-backend-development#:~:text=Backend%20developers%20build%20code%
-          20that,what%20you%20don't%20see.</url>
+          <url>https://www.simplilearn.com/tutorials/programming-tutorial/what-is-backend-development</url>
       </link>
       <button>
               <text>See other jobs</text>
